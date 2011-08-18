@@ -57,6 +57,7 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.16)
+    mysql2 (0.3.7)
     orm_adapter (0.0.5)
     polyglot (0.3.2)
     rack (1.2.3)
@@ -160,6 +161,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  mysql2
   refinerycms (~> 1.0.4)
   refinerycms-blog (~> 1.6.1)
   refinerycms-i18n (~> 1.0.0)
