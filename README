@@ -4,5 +4,6 @@ website developed with RafineryCMS
 * blog
 * inquiries
 * search
-* page_images
+* page-images
 == custom engines:
+* portfolio_items

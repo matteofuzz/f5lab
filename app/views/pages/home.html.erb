@@ -1,2 +1,13 @@
-<%= render "shared/page_images" %>  
-<%= render :partial => "/shared/content_page" %>
+<h1 id="title"><%= @page.title %></h1>
+<section id='home_slideshow'>     
+  <%= render "shared/slideshow" %>
+</section>  
+<section id='home_images'>     
+  <%= render "shared/page_images" %>  
+</section>
+<section id='body_content'>
+  <%=raw @page[:body] %>
+</section>
+<section id='side_body_content'>
+  <%=raw @page[:side_body] %>
+</section>

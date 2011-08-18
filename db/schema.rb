@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110817211219) do
+ActiveRecord::Schema.define(:version => 20110818115331) do
 
   create_table "blog_categories", :force => true do |t|
     t.string   "title"
@@ -155,6 +155,19 @@ ActiveRecord::Schema.define(:version => 20110817211219) do
   add_index "pages", ["lft"], :name => "index_pages_on_lft"
   add_index "pages", ["parent_id"], :name => "index_pages_on_parent_id"
   add_index "pages", ["rgt"], :name => "index_pages_on_rgt"
+
+  create_table "portfolio_items", :force => true do |t|
+    t.string   "title"
+    t.text     "description"
+    t.integer  "screenshot_id"
+    t.string   "link"
+    t.datetime "published_at"
+    t.integer  "position"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "portfolio_items", ["id"], :name => "index_portfolio_items_on_id"
 
   create_table "refinery_settings", :force => true do |t|
     t.string   "name"

@@ -66,3 +66,5 @@ gem 'refinerycms-search',       '~> 0.9.8'
 gem 'refinerycms-page-images',  '~> 1.0'
 
 # END USER DEFINED
+
+gem 'refinerycms-portfolio_items', '1.0', :path => 'vendor/engines'

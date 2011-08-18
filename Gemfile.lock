@@ -1,3 +1,8 @@
+PATH
+  remote: vendor/engines
+  specs:
+    refinerycms-portfolio_items (1.0)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -167,5 +172,6 @@ DEPENDENCIES
   refinerycms-i18n (~> 1.0.0)
   refinerycms-inquiries (~> 1.0.0)
   refinerycms-page-images (~> 1.0)
+  refinerycms-portfolio_items (= 1.0)!
   refinerycms-search (~> 0.9.8)
   sqlite3
