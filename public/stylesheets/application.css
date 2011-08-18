@@ -1,8 +1,36 @@
-/*
+/*  
+	F5lab
   Override default refinery application CSS below.
   Formatting applies to all frontend.
 */
 
-#search-box {
+/*** SEARCH BOX ***/
+#search_box {
 	float: right;
+}
+
+/*** CHANGE LOCALE BOX ***/
+#locale_box {  
+	margin-right: 20px;  
+	float: right;
+}
+#locale_box ul#locales {
+	list-style: none;  
+	padding: 0;
+	margin: 0;
+}       
+#locale_box ul#locales li {
+	float: left;   
+	margin-left: 10px;  
+	padding: 2px 5px 0 5px; 
+}
+#locale_box ul#locales li.current, #locale_box ul#locales li:hover {
+	background: #22A7F2;     
+	color: #FFF;
+}  
+#locale_box ul#locales li a { 
+	text-decoration: none;
+}
+#locale_box ul#locales li img {
+	margin-right: 4px;
 }
