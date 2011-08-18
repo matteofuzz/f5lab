@@ -1,3 +1,4 @@
+DELETE FROM refinery_settings
 INSERT INTO refinery_settings VALUES(1,'use_marketable_urls','--- true
 ','t','2011-08-17 12:26:32.481861','2011-08-17 12:26:32.481861','pages','f',NULL,'text_area');
 INSERT INTO refinery_settings VALUES(2,'i18n_translation_enabled','--- true
