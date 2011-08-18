@@ -35,7 +35,7 @@ source 'http://rubygems.org'
 
 gem 'refinerycms',              '~> 1.0.4'
              
-group :development do
+group :production do
   gem 'mysql2'
 end
   
