@@ -1,14 +1,14 @@
-INSERT INTO "refinery_settings" VALUES(1,'use_marketable_urls','--- "true"
+INSERT INTO "refinery_settings" VALUES(1,'use_marketable_urls','--- "1"
 ','t','2011-08-17 12:26:32.481861','2011-08-17 12:26:32.481861','pages','f',NULL,'text_area');
-INSERT INTO "refinery_settings" VALUES(2,'i18n_translation_enabled','--- "true"
+INSERT INTO "refinery_settings" VALUES(2,'i18n_translation_enabled','--- "1"
 ','t','2011-08-17 12:26:32.583845','2011-08-17 12:26:32.583845','refinery','f',NULL,'text_area');
 INSERT INTO "refinery_settings" VALUES(3,'i18n_translation_default_frontend_locale','--- :it
 ','t','2011-08-17 12:26:32.591441','2011-08-17 13:11:26.227971','refinery','f',NULL,'text_area');
 INSERT INTO "refinery_settings" VALUES(4,'dragonfly_secret','--- adeecc8a5cf797d9484ed88ed65456487cf721c61ec3d081
 ','t','2011-08-17 12:28:01.205809','2011-08-17 12:28:01.205809',NULL,'f',NULL,'text_area');
-INSERT INTO "refinery_settings" VALUES(5,'approximate_ascii','--- "false"
+INSERT INTO "refinery_settings" VALUES(5,'approximate_ascii','--- "0"
 ','t','2011-08-17 12:28:02.243088','2011-08-17 12:28:02.243088','pages','f',NULL,'text_area');
-INSERT INTO "refinery_settings" VALUES(6,'strip_non_ascii','--- "false"
+INSERT INTO "refinery_settings" VALUES(6,'strip_non_ascii','--- "0"
 ','t','2011-08-17 12:28:02.267617','2011-08-17 12:28:02.267617','pages','f',NULL,'text_area');
 INSERT INTO "refinery_settings" VALUES(7,'i18n_translation_locales','--- 
 :en: English
@@ -35,9 +35,9 @@ INSERT INTO "refinery_settings" VALUES(7,'i18n_translation_locales','---
 ','t','2011-08-17 12:29:41.510361','2011-08-17 12:59:28.160687','refinery','f',NULL,'text_area');
 INSERT INTO "refinery_settings" VALUES(8,'site_name','--- F5lab
 ','t','2011-08-17 12:29:42.980879','2011-08-17 13:09:26.420374',NULL,'f',NULL,'text_area');
-INSERT INTO "refinery_settings" VALUES(9,'use_resource_caching','--- "true"
+INSERT INTO "refinery_settings" VALUES(9,'use_resource_caching','--- "1"
 ','t','2011-08-17 12:29:42.999330','2011-08-17 12:29:42.999330',NULL,'f',NULL,'text_area');
-INSERT INTO "refinery_settings" VALUES(10,'use_google_ajax_libraries','--- "false"
+INSERT INTO "refinery_settings" VALUES(10,'use_google_ajax_libraries','--- "0"
 ','t','2011-08-17 12:29:43.051790','2011-08-17 12:29:43.051790',NULL,'f',NULL,'text_area');
 INSERT INTO "refinery_settings" VALUES(11,'i18n_translation_default_locale','--- :it
 ','t','2011-08-17 12:30:19.023494','2011-08-17 12:54:41.142960','refinery','f',NULL,'text_area');
@@ -50,7 +50,7 @@ INSERT INTO "refinery_settings" VALUES(13,'i18n_translation_frontend_locales','-
 INSERT INTO "refinery_settings" VALUES(14,'activity_show_limit','--- 7
 ','t','2011-08-17 12:30:19.423519','2011-08-17 12:30:19.423519',NULL,'f',NULL,'text_area');
 INSERT INTO "refinery_settings" VALUES(15,'page_title','--- 
-:chain_page_title: false
+:chain_page_title: 0
 :ancestors: 
   :separator: " | "
   :class: ancestors
@@ -58,29 +58,29 @@ INSERT INTO "refinery_settings" VALUES(15,'page_title','---
 :page_title: 
   :class: 
   :tag: 
-  :wrap_if_not_chained: false
+  :wrap_if_not_chained: 0
 ','t','2011-08-17 12:31:14.680610','2011-08-17 12:31:14.680610',NULL,'f',NULL,'text_area');
-INSERT INTO "refinery_settings" VALUES(16,'authenticity_token_on_frontend','--- "true"
+INSERT INTO "refinery_settings" VALUES(16,'authenticity_token_on_frontend','--- "1"
 ','t','2011-08-17 12:31:15.065723','2011-08-17 12:31:15.065723',NULL,'f',NULL,'text_area');
-INSERT INTO "refinery_settings" VALUES(17,'frontend_refinery_stylesheets_enabled','--- "true"
+INSERT INTO "refinery_settings" VALUES(17,'frontend_refinery_stylesheets_enabled','--- "1"
 ','t','2011-08-17 12:31:15.138706','2011-08-17 12:31:15.138706',NULL,'f',NULL,'text_area');
-INSERT INTO "refinery_settings" VALUES(18,'menu_hide_children','--- "false"
+INSERT INTO "refinery_settings" VALUES(18,'menu_hide_children','--- "0"
 ','t','2011-08-17 12:31:15.196647','2011-08-17 12:31:15.196647',NULL,'f',NULL,'text_area');
-INSERT INTO "refinery_settings" VALUES(19,'cache_pages_backend','--- "false"
+INSERT INTO "refinery_settings" VALUES(19,'cache_pages_backend','--- "0"
 ','t','2011-08-17 12:58:30.923590','2011-08-17 12:58:30.923590',NULL,'f',NULL,'text_area');
 INSERT INTO "refinery_settings" VALUES(20,'default_page_parts','--- 
 - Body
 - Side Body
 ','t','2011-08-17 12:59:47.719006','2011-08-17 12:59:47.719006',NULL,'f',NULL,'text_area');
-INSERT INTO "refinery_settings" VALUES(21,'new_page_parts','--- "false"
+INSERT INTO "refinery_settings" VALUES(21,'new_page_parts','--- "0"
 ','t','2011-08-17 12:59:48.027247','2011-08-17 12:59:48.027247',NULL,'f',NULL,'text_area');
-INSERT INTO "refinery_settings" VALUES(22,'approximate_ascii','--- "false"
+INSERT INTO "refinery_settings" VALUES(22,'approximate_ascii','--- "0"
 ','t','2011-08-17 13:17:12.545958','2011-08-17 13:17:12.545958','blog','f',NULL,'text_area');
-INSERT INTO "refinery_settings" VALUES(23,'strip_non_ascii','--- "false"
+INSERT INTO "refinery_settings" VALUES(23,'strip_non_ascii','--- "0"
 ','t','2011-08-17 13:17:12.690622','2011-08-17 13:17:12.690622','blog','f',NULL,'text_area');
-INSERT INTO "refinery_settings" VALUES(24,'comments_allowed','--- "true"
+INSERT INTO "refinery_settings" VALUES(24,'comments_allowed','--- "1"
 ','t','2011-08-17 13:18:27.427810','2011-08-17 13:27:45.833396','blog','f',NULL,'text_area');
-INSERT INTO "refinery_settings" VALUES(25,'comment_moderation','--- "true"
+INSERT INTO "refinery_settings" VALUES(25,'comment_moderation','--- "1"
 ','t','2011-08-17 13:18:27.599634','2011-08-17 13:18:27.599634','blog','f',NULL,'text_area');
 INSERT INTO "refinery_settings" VALUES(26,'blog_posts_per_page','--- 10
 ','t','2011-08-17 13:18:51.445645','2011-08-17 13:18:51.445645',NULL,'f',NULL,'text_area');
@@ -105,18 +105,18 @@ INSERT INTO "refinery_settings" VALUES(32,'tld_length','--- 1
 ','t','2011-08-17 13:34:32.599054','2011-08-17 13:34:32.599054',NULL,'f',NULL,'text_area');
 INSERT INTO "refinery_settings" VALUES(33,'inquiry_confirmation_subject','--- Thank you for your inquiry
 ','t','2011-08-17 13:34:32.697743','2011-08-17 13:34:32.697743',NULL,'f',NULL,'text_area');
-INSERT INTO "refinery_settings" VALUES(34,'show_contact_privacy_link','--- "false"
+INSERT INTO "refinery_settings" VALUES(34,'show_contact_privacy_link','--- "0"
 ','t','2011-08-17 13:39:06.879591','2011-08-17 13:39:06.879591',NULL,'f',NULL,'text_area');
 INSERT INTO "refinery_settings" VALUES(35,'inquiry_notification_subject','--- New inquiry from your website
 ','t','2011-08-17 13:40:20.189165','2011-08-17 13:40:20.189165',NULL,'f',NULL,'text_area');
-INSERT INTO "refinery_settings" VALUES(36,'page_images_captions','--- "true"
+INSERT INTO "refinery_settings" VALUES(36,'page_images_captions','--- "1"
 ','t','2011-08-17 21:13:45.905556','2011-08-17 21:17:26.792407',NULL,'f',NULL,'text_area');
 INSERT INTO "refinery_settings" VALUES(37,'user_image_sizes','--- 
 :small: 110x110>
 :medium: 225x255>
 :large: 450x450>
 ','f','2011-08-17 21:14:39.974927','2011-08-17 21:14:39.974927',NULL,'f',NULL,'text_area');
-INSERT INTO "refinery_settings" VALUES(38,'superuser_can_assign_roles','--- "false"
+INSERT INTO "refinery_settings" VALUES(38,'superuser_can_assign_roles','--- "0"
 ','t','2011-08-17 22:10:10.431866','2011-08-17 22:10:10.431866',NULL,'f',NULL,'text_area');
 INSERT INTO "refinery_settings" VALUES(39,'comment_notification_subject','--- New inquiry from your website
 ','t','2011-08-17 22:13:45.544457','2011-08-17 22:13:45.544457','blog','f',NULL,'text_area');
