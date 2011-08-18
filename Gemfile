@@ -35,7 +35,7 @@ source 'http://rubygems.org'
 
 gem 'refinerycms',              '~> 1.0.4'
              
-gem 'mysql2'
+gem 'mysql2', '~>0.2.x', '<0.3'
   
 group :development, :test do    
   gem 'sqlite3' 
