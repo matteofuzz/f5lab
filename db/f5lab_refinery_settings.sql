@@ -1,4 +1,4 @@
-BEGIN TRANSACTION;
+BEGIN;
 CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL);
 INSERT INTO "schema_migrations" VALUES('20110817122623');
 INSERT INTO "schema_migrations" VALUES('20110817122624');
