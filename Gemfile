@@ -34,7 +34,11 @@ source 'http://rubygems.org'
 # Anything you put in here will be overridden when the app gets updated.
 
 gem 'refinerycms',              '~> 1.0.4'
-
+             
+group :development do
+  gem 'mysql2'
+end
+  
 group :development, :test do    
   gem 'sqlite3' 
   # To use refinerycms-testing, uncomment it (if it's commented out) and run 'bundle install'
