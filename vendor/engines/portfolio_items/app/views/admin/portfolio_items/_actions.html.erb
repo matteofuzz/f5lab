@@ -1,0 +1,28 @@
+<ul>
+  <% if Admin::PortfolioItemsController.searchable? %>
+    <li>
+      <%= render :partial => "/shared/admin/search",
+                  :locals => {
+                    :url => admin_portfolio_items_path
+                  } %>
+    </li>
+  <% end %>
+  <li>
+    <%= link_to t('.create_new'), new_admin_portfolio_item_path,
+                 :class => "add_icon" %>
+  </li>
+<% if !searching? and Admin::PortfolioItemsController.sortable? and PortfolioItem.count > 1 %>
+  <li>
+    <%= link_to t('.reorder', :what => "Portfolio Items"),
+                 admin_portfolio_items_path,
+                 :id => "reorder_action",
+                 :class => "reorder_icon" %>
+
+    <%= link_to t('.reorder_done', :what => "Portfolio Items"),
+                 admin_portfolio_items_path,
+                 :id => "reorder_action_done",
+                 :style => "display: none;",
+                 :class => "reorder_icon" %>
+  </li>
+<% end %>
+</ul>

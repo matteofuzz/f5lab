@@ -1,0 +1,51 @@
+<% content_for :body_content_title do %>
+  <%= @portfolio_item.title %>
+<% end %>
+
+<% content_for :body_content_left do %>
+  <section>
+    <h1>Title</h1>
+    <p>
+      <%=raw @portfolio_item.title %>
+    </p>
+  </section>
+  <section>
+    <h1>Description</h1>
+    <p>
+      <%=raw @portfolio_item.description %>
+    </p>
+  </section>
+  <section>
+    <h1>Screenshot</h1>
+    <p>
+      <%= image_fu @portfolio_item.screenshot, '600x800' %>
+    </p>
+  </section>
+  <section>
+    <h1>Link</h1>
+    <p>
+      <%=raw @portfolio_item.link %>
+    </p>
+  </section>
+  <section>
+    <h1>Published At</h1>
+    <p>
+      <%=raw @portfolio_item.published_at %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :body_content_right do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="portfolio_items">
+      <% @portfolio_items.each do |portfolio_item| %>
+        <li>
+          <%= link_to image_tag(portfolio_item.screenshot.thumbnail('150x200').url)+portfolio_item.title, portfolio_item_path(portfolio_item) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render :partial => "/shared/content_page" %>

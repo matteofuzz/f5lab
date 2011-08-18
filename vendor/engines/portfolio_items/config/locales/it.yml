@@ -1,0 +1,25 @@
+it:
+  shared:
+    admin:
+      image_picker:
+        image: immagine
+  plugins:
+    portfolio_items:
+      title: Portfolio
+  admin:
+    portfolio_items:
+      actions:
+        create_new: Aggiungi un elemento al portfolio
+        reorder: Riordina gli elementi del portfolio
+        reorder_done: Elementi del portfolio riordinati
+      records:
+        title: Elementi del portfolio
+        sorry_no_results: Mi dispiace! Nessun risultato.
+        no_items_yet: Non c'è nessun elemento in portfolio. Click "Aggiungi un elemento al portfolio" per aggiungere il tuo primo elemento al portfolio.
+      portfolio_item:
+        view_live_html: Vedi questo elemento del portfolio nel sito <br/><em>(apre una nuova finestra)</em>
+        edit: Modifica questo elemento del portfolio
+        delete: Elimina per sempre questo elemento del portfolio
+  portfolio_items:
+    show:
+      other: Altri elementi del portfolio

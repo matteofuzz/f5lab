@@ -1,0 +1,25 @@
+en:
+  shared:
+    admin:
+      image_picker:
+        image: image
+  plugins:
+    portfolio_items:
+      title: Portfolio Items
+  admin:
+    portfolio_items:
+      actions:
+        create_new: Add New Portfolio Item
+        reorder: Reorder Portfolio Items
+        reorder_done: Done Reordering Portfolio Items
+      records:
+        title: Portfolio Items
+        sorry_no_results: Sorry! There are no results found.
+        no_items_yet: There are no Portfolio Items yet. Click "Add New Portfolio Item" to add your first portfolio item.
+      portfolio_item:
+        view_live_html: View this portfolio item live <br/><em>(opens in a new window)</em>
+        edit: Edit this portfolio item
+        delete: Remove this portfolio item forever
+  portfolio_items:
+    show:
+      other: Other Portfolio Items

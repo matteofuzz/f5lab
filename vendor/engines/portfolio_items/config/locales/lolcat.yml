@@ -1,0 +1,25 @@
+lolcat:
+  shared:
+    admin:
+      image_picker:
+        image: IMAGE
+  plugins:
+    portfolio_items:
+      title: Portfolio Items
+  admin:
+    portfolio_items:
+      actions:
+        create_new: CREATE NEW Portfolio Item
+        reorder: REORDR Portfolio Items
+        reorder_done: DUN REORDERIN Portfolio Items
+      records:
+        title: Portfolio Items
+        sorry_no_results: SRY! THAR R NO RESULTS FINDZ.
+        no_items_yet: THAR R NO Portfolio Items YET. CLICK "CREATE NEW Portfolio Item" 2 ADD UR FURST portfolio item.
+      portfolio_item:
+        view_live_html: VIEW DIS portfolio item LIV <BR/><EM>(OPENS IN NEW WINDOW)</EM>
+        edit: EDIT DIS portfolio item
+        delete: REMOOV DIS portfolio item FOREVR
+  portfolio_items:
+    show:
+      other: OTHR Portfolio Items

@@ -1,0 +1,21 @@
+nb:
+  plugins:
+    portfolio_items:
+      title: Portfolio Items
+  admin:
+    portfolio_items:
+      actions:
+        create_new: Lag en ny Portfolio Item
+        reorder: Endre rekkefølgen på Portfolio Items
+        reorder_done: Ferdig å endre rekkefølgen Portfolio Items
+      records:
+        title: Portfolio Items
+        sorry_no_results: Beklager! Vi fant ikke noen resultater.
+        no_items_yet: Det er ingen Portfolio Items enda. Klikk på "Lag en ny Portfolio Item" for å legge til din første portfolio item.
+      portfolio_item:
+        view_live_html: Vis hvordan denne portfolio item ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+        edit: Rediger denne portfolio item
+        delete: Fjern denne portfolio item permanent
+  portfolio_items:
+    show:
+      other: Andre Portfolio Items
