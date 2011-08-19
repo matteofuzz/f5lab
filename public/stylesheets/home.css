@@ -1,4 +1,54 @@
 /*
   Override default refinery homepage styles here.
   These only apply to the homepage of your site.
-*/
+*/   
+
+/*** SLIDESHOW ***/
+#slideshow {
+	position:relative;
+	width:1000px; 
+	height:400px;
+	background: url(/images/ajax_loader.gif) no-repeat 50% 50%;
+	margin: auto; /* Se vogliamo lo slideshow centrato liquido */
+}
+#slideshow img {
+	position:absolute;
+	top:0px;
+	left:0px;
+	display:none;
+}
+#slideshow a {
+	border:0;
+	display:block;  
+}
+.nivo-directionNav a {
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+	position: absolute;
+	top: 0px !important;
+	text-indent: -9000px;
+} 
+a.nivo-prevNav {
+	background: url(/images/arrows.png) no-repeat top left;
+	left: 15px;
+}
+a.nivo-nextNav {
+	background: url(/images/arrows.png) no-repeat top right;
+	right: 20px;
+}
+.nivo-controlNav {
+	position: absolute;
+	bottom: 0;
+}
+.nivo-controlNav a {
+	float: left;
+	margin-right: 3px;
+	background: url(/images/bullets.png) no-repeat top left;
+	height: 22px;
+	width: 22px;
+	text-indent: -9000px;
+}
+.nivo-controlNav a.active {
+	background-position: bottom left;
+}

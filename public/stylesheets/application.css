@@ -3,6 +3,20 @@
   Override default refinery application CSS below.
   Formatting applies to all frontend.
 */
+         
+/*** GENERAL ***/
+.clear { clear: both; }
+   
+/*** HEADER ***/ 
+#logo {
+	font-size: 40px;
+} 
+#logo .site_description {
+	font-size: 18px;
+}
+nav#menu {
+	float: left;
+}
 
 /*** SEARCH BOX ***/
 #search_box {
@@ -34,3 +48,4 @@
 #locale_box ul#locales li img {
 	margin-right: 4px;
 }
+

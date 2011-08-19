@@ -14,8 +14,10 @@ source 'http://rubygems.org'
 # gem 'capistrano'
 
 # To use debugger (ruby-debug for Ruby 1.8.7+, ruby-debug19 for Ruby 1.9.2+)
-# gem 'ruby-debug'
-# gem 'ruby-debug19', :require => 'ruby-debug'
+# gem 'ruby-debug'      
+group :development do
+  gem 'ruby-debug19', :require => 'ruby-debug'
+end
 
 # Bundle the extra gems:
 # gem 'bj'
@@ -67,4 +69,4 @@ gem 'refinerycms-page-images',  '~> 1.0'
 
 # END USER DEFINED
 
-gem 'refinerycms-portfolio_items', '1.0', :path => 'vendor/engines'
+gem 'refinerycms-portfolio_items', '1.0', :path => 'vendor/engines'     

@@ -1,7 +1,40 @@
-<ul id="slideshow_items">
-  <% PortfolioItem.where("published_at <= ?", Time.now).each do |portfolio_item| %>
-    <li>
-      <%= link_to image_tag(portfolio_item.screenshot.thumbnail('300x400').url)+portfolio_item.title, portfolio_item_path(portfolio_item) %>
-    </li>
+<div id="slideshow">
+  <% slides = [] %>                             
+  <% slides += @page.images if RefinerySetting.get(:show_home_images_in_slideshow) %>
+  <% slides += PortfolioItem.where("published_at <= ?", Time.now).map &:screenshot if RefinerySetting.get(:show_portfolio_items_in_slideshow) %>     
+  <% for slide in slides do %>
+     <%= image_tag(slide.thumbnail('1000x400#n').process(:greyscale).url) %>
   <% end %>
-</ul>
+</div>                                        
+<% content_for :stylesheets, stylesheet_link_tag("nivo-slider.css") %>   
+<% content_for :javascripts, do %>               
+  <%= javascript_include_tag "jquery-1.4.2.min.js" %> 
+	<%= javascript_include_tag "jquery.nivo.slider.js" %>
+	<script type="text/javascript" charset="utf-8">
+		$(window).load(function(){
+			$('#slideshow').nivoSlider({
+			        effect:'random', //Specify sets like: 'fold,fade,sliceDown'  (sliceDown sliceDownLeft sliceUp sliceUpLeft sliceUpDown sliceUpDownLeft fold fade random slideInRight slideInLeft)
+			        slices:15,
+			        animSpeed:500, //Slide transition speed
+			        pauseTime:3000,
+			        startSlide:0, //Set starting Slide (0 index)
+			        directionNav:true, //Next & Prev
+			        directionNavHide:true, //Only show on hover
+			        controlNav:true, //1,2,3...
+			        controlNavThumbs:false, //Use thumbnails for Control Nav
+			        controlNavThumbsFromRel:false, //Use image rel for thumbs
+			        controlNavThumbsSearch: '.jpg', //Replace this with...
+			        controlNavThumbsReplace: '_thumb.jpg', //...this in thumb Image src
+			        keyboardNav:true, //Use left & right arrows
+			        pauseOnHover:true, //Stop animation while hovering
+			        manualAdvance:false, //Force manual transitions
+			        captionOpacity:0.8, //Universal caption opacity
+			        beforeChange: function(){},
+			        afterChange: function(){},
+			        slideshowEnd: function(){}, //Triggers after all slides have been shown
+			        lastSlide: function(){}, //Triggers when last slide is shown
+			        afterLoad: function(){} //Triggers when slider has loaded
+			    });
+		});
+	</script>
+<% end %>
