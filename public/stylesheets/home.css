@@ -2,14 +2,30 @@
   Override default refinery homepage styles here.
   These only apply to the homepage of your site.
 */   
+         
+/*** HEADER ***/
+h1#title {
+	display: none;
+}       
+
+/*** SECTIONS LAYOUT ***/
+#body_content {
+    float: left;
+    width: 500px;
+} 
+#side_body_content {
+    float: right;
+    width: 500px;
+}
 
 /*** SLIDESHOW ***/
 #slideshow {
 	position:relative;
 	width:1000px; 
 	height:400px;
-	background: url(/images/ajax_loader.gif) no-repeat 50% 50%;
-	margin: auto; /* Se vogliamo lo slideshow centrato liquido */
+	background: url(/images/ajax_loader.gif) no-repeat 50% 50%;    
+	margin: auto; /* Se vogliamo lo slideshow centrato liquido */  
+	margin-top: 20px;
 }
 #slideshow img {
 	position:absolute;

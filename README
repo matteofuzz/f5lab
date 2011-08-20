@@ -7,3 +7,5 @@ website developed with RafineryCMS
 * page-images
 == custom engines:
 * portfolio_items
+== customizations:
+* slideshow with jQuery nivo slides from portfolio and/or images of home by settings

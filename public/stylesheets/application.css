@@ -1,16 +1,51 @@
 /*  
 	F5lab
   Override default refinery application CSS below.
-  Formatting applies to all frontend.
+  Formatting applies to all frontend.  
+
+	Azzurro RefineryCMS: #22A7F2
 */
-         
-/*** GENERAL ***/
+             
+/* GENERAL FRONTEND LAYOUT */
+@font-face {
+    font-family: "Waukegan";
+    font-style: normal;
+    font-weight: normal;
+    src: url("/fonts/waukegan-ldo/Waukegan LDO.ttf") format("truetype");
+}  
+@font-face {
+    font-family: "Waukegan Bold";
+    font-style: normal;
+    font-weight: normal;
+    src: url("/fonts/waukegan-ldo/Waukegan LDO Bold.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Waukegan Extended";
+    font-style: normal;
+    font-weight: normal;
+    src: url("/fonts/waukegan-ldo/Waukegan LDO Extended.ttf") format("truetype");
+}
+
+/*** GENERAL ***/  
+body {
+	font-family: "Waukegan", "arial", sans-serif;   
+	color: #333;
+}
 .clear { clear: both; }
+a { color: #22A7F2;}   
+a:hover { color: #22A7F2;}
+a:visited { color: #22A7F2;} 
    
 /*** HEADER ***/ 
 #logo {
-	font-size: 40px;
-} 
+	font-size: 50px;   
+	font-family: "Waukegan Extended";
+	font-weight: normal;
+}     
+#logo a {
+	text-decoration: none;
+	color: #333;
+}
 #logo .site_description {
 	font-size: 18px;
 }
@@ -34,16 +69,8 @@ nav#menu {
 	margin: 0;
 }       
 #locale_box ul#locales li {
-	float: left;   
-	margin-left: 10px;  
+	float: left;    
 	padding: 2px 5px 0 5px; 
-}
-#locale_box ul#locales li.current, #locale_box ul#locales li:hover {
-	background: #22A7F2;     
-	color: #FFF;
-}  
-#locale_box ul#locales li a { 
-	text-decoration: none;
 }
 #locale_box ul#locales li img {
 	margin-right: 4px;
