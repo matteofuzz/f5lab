@@ -1,0 +1,96 @@
+/*  
+	F5lab - Dark theme
+  Override default refinery application CSS below.
+  Formatting applies to all frontend.  
+                              
+	Theme's Colors:
+	- acid_green => #9f0
+	- acid_lime => #cf0
+	- fucsia => #f36
+	- orange => #f60
+	- acid_yellow => #ff3
+	- light_red => #f30  
+	- black => #111 
+	- white => #fff
+													
+	( light_blue RefineryCMS => #22A7F2 )
+*/
+             
+/* GENERAL FRONTEND LAYOUT */  
+
+/* Fonts */
+
+/*** GENERAL ***/  
+body {                   
+	color: #fff;
+	background: #111;
+}                     
+a { color: #9f0;}   
+a:hover { color: #9f0;}
+a:visited { color: #9f0;} 
+   
+/*** LOGO ***/ 
+     
+#logo a {       
+	color: #fff;  
+	background: transparent url(/images/vortex.png) no-repeat 6px -50px;   
+	padding: 6px 6px 0 80px; 
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;  
+}
+#logo a:hover {  
+	color: #111;  
+	background: #ff3 url(/images/vortex.png) no-repeat 6px 6px;
+}
+
+/*** NAVIGATION MENU' ***/
+nav#menu {       
+	background: #9f0;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;   
+}
+nav#menu li {   
+	border-right: 1px solid #111;
+}
+nav#menu li.first {  
+	-webkit-border-top-left-radius: 3px;
+	-webkit-border-bottom-left-radius: 3px;
+	-moz-border-radius-topleft: 3px;
+	-moz-border-radius-bottomleft: 3px;
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+}  
+nav#menu li.last {  
+	-webkit-border-top-right-radius: 3px;
+	-webkit-border-bottom-right-radius: 3px;
+	-moz-border-radius-topright: 3px;
+	-moz-border-radius-bottomright: 3px;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;   
+	border-right: none;
+} 
+nav#menu li.selected {   
+	background: #f36;  
+}
+nav#menu li:hover:not(.selected) {   
+	background: #ff3;    
+}    
+nav#menu li a {  
+	color: #fff;   
+}   
+nav#menu li.selected a {
+	font-weight: normal;
+} 
+nav#menu li:hover:not(.selected) a {
+	color: #111;
+} 
+
+/*** SEARCH BOX ***/
+
+/*** LOCALE BOX ***/
+#locale_box ul#locales li a {
+	color: #fff;
+	text-decoration: none;
+}      

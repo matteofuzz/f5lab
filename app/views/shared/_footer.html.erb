@@ -1,0 +1,7 @@
+<div class="left">
+  <%= t('.copyright', :year => Time.now.year,
+                      :site_name => RefinerySetting.find_or_set(:site_name, "Company Name")) %>
+</div>
+<div class="right">
+	<%= theme_switcher %>
+</div>

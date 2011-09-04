@@ -1,12 +1,14 @@
 /*  
-	F5lab
+	F5lab - Base flat theme (without colors)
   Override default refinery application CSS below.
   Formatting applies to all frontend.  
-
-	Azzurro RefineryCMS: #22A7F2
+													
+	( light_blue RefineryCMS => #22A7F2 )
 */
              
-/* GENERAL FRONTEND LAYOUT */
+/* GENERAL FRONTEND LAYOUT */  
+
+/* Fonts */
 @font-face {
     font-family: "Waukegan";
     font-style: normal;
@@ -30,37 +32,59 @@
 body {
 	font-family: "Waukegan", "arial", sans-serif;   
 	color: #333;
+	background: #fff;
 }
 .clear { clear: both; }
 a { color: #22A7F2;}   
 a:hover { color: #22A7F2;}
 a:visited { color: #22A7F2;} 
-   
-/*** HEADER ***/ 
+      
+/*** THEME SWITCHER ***/
+#theme_switcher {
+	list-style: none;
+	margin: 0;
+	padding: 0; 
+}
+#theme_switcher li {
+	float: left;
+}
+/*** LOGO ***/ 
 #logo {
-	font-size: 50px;   
+	font-size: 60px;   
 	font-family: "Waukegan Extended";
-	font-weight: normal;
+	font-weight: normal;  
+	margin: 20px 0 16px 0;  
 }     
 #logo a {
 	text-decoration: none;
-	color: #333;
-}
+	color: #333;  
+	background: transparent url(/images/vortex.png) no-repeat 6px 6px;   
+	padding: 6px 6px 0 80px; 
+}    
 #logo .site_description {
 	font-size: 18px;
-}
+}         
+
+/*** NAVIGATION MENU' ***/
 nav#menu {
-	float: left;
+	float: left;   
 }
+nav#menu li {  
+	font-size: 18px; 
+	padding: 5px 10px;
+	margin: 0;                
+}     
 
 /*** SEARCH BOX ***/
 #search_box {
-	float: right;
+	float: right; 
+	padding: 5px 0;
 }
 
 /*** LOCALE BOX ***/
 #locale_box {  
 	margin-right: 20px;  
+	padding: 5px 0;
 	float: right;
 }
 #locale_box ul#locales {
@@ -70,9 +94,22 @@ nav#menu {
 }       
 #locale_box ul#locales li {
 	float: left;    
-	padding: 2px 5px 0 5px; 
-}
+	margin: 2px 5px 0 5px; 
+}  
 #locale_box ul#locales li img {
 	margin-right: 4px;
+}    
+      
+/*** FOOTER ***/   
+footer {
+	margin-bottom: 20px;
+	margin-top: 20px;
+	padding-top: 20px;
+	border-top: solid 1px;
 }
-
+footer div {
+	display: inline-block;
+}      
+footer div.right {
+	float: right;
+}

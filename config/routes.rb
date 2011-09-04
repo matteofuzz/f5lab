@@ -1,4 +1,6 @@
 F5lab::Application.routes.draw do
+  match "use_theme(/:theme)" => 'application#use_theme', :as => :use_theme
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

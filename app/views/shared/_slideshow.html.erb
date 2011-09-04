@@ -6,7 +6,7 @@
      <%= image_tag(slide.thumbnail('1000x400#n').process(:greyscale).url) %>
   <% end %>
 </div>                                        
-<% content_for :stylesheets, stylesheet_link_tag("nivo-slider.css") %>   
+<% content_for :stylesheets, stylesheet_link_tag("nivo-slider.css") %>      
 <% content_for :javascripts, do %>               
   <%= javascript_include_tag "jquery-1.4.2.min.js" %> 
 	<%= javascript_include_tag "jquery.nivo.slider.js" %>
