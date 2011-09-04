@@ -33,15 +33,12 @@ a:visited { color: #9f0;}
      
 #logo a {       
 	color: #fff;  
-	background: transparent url(/images/vortex.png) no-repeat 6px -50px;   
-	padding: 6px 6px 0 80px; 
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	border-radius: 3px;  
+	background: transparent url(/images/vortex_gw.png) no-repeat 0 -50px;   
+	padding: 6px 0 0 74px;  
 }
 #logo a:hover {  
-	color: #111;  
-	background: #ff3 url(/images/vortex.png) no-repeat 6px 6px;
+	color: #9f0;  
+	background: transparent url(/images/vortex_gw.png) no-repeat 0 6px;
 }
 
 /*** NAVIGATION MENU' ***/
@@ -75,10 +72,11 @@ nav#menu li.selected {
 	background: #f36;  
 }
 nav#menu li:hover:not(.selected) {   
-	background: #ff3;    
+	background: #fff;    
 }    
 nav#menu li a {  
-	color: #fff;   
+	color: #fff;  
+	text-decoration: none; 
 }   
 nav#menu li.selected a {
 	font-weight: normal;
@@ -88,9 +86,50 @@ nav#menu li:hover:not(.selected) a {
 } 
 
 /*** SEARCH BOX ***/
+#search_box #query {
+	border: none;   
+	padding: 4px 12px;  
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;   
+	background: #fff url(/images/icons/search.png) right -3px no-repeat;
+}     
+#search_box input[type=submit] {
+	display: none;
+}
 
-/*** LOCALE BOX ***/
+/*** LOCALE BOX ***/     
+#locale_box ul#locales li { 
+	margin: 2px 5px 0 0; 
+	padding: 3px 6px; 	
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;    
+}
 #locale_box ul#locales li a {
 	color: #fff;
 	text-decoration: none;
-}      
+}           
+#locale_box ul#locales li.current {
+	background: #fff; 
+	color: #111;       
+}            
+#locale_box ul#locales li:hover:not(.current) {
+	background: #fff;  
+}
+#locale_box ul#locales li:hover:not(.current) a {  
+	color: #111;     
+}                    
+
+/*** THEME SWITCHER ***/
+#theme_switcher {
+	background: #fff url(/images/icons/star_moon_round.png) 1px 0 no-repeat;    
+	padding: 6px 6px 3px 28px;    
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+#theme_switcher li a {
+	color: #111;
+	text-decoration: none;
+}

@@ -33,6 +33,9 @@ body {
 	font-family: "Waukegan", "arial", sans-serif;   
 	color: #333;
 	background: #fff;
+}            
+header {
+	position: relative;
 }
 .clear { clear: both; }
 a { color: #22A7F2;}   
@@ -59,10 +62,11 @@ a:visited { color: #22A7F2;}
 	text-decoration: none;
 	color: #333;  
 	background: transparent url(/images/vortex.png) no-repeat 6px 6px;   
-	padding: 6px 6px 0 80px; 
+	padding: 6px 0 0 80px; 
 }    
 #logo .site_description {
-	font-size: 18px;
+	font-size: 18px;  
+	margin-left: 10px;
 }         
 
 /*** NAVIGATION MENU' ***/
@@ -77,15 +81,18 @@ nav#menu li {
 
 /*** SEARCH BOX ***/
 #search_box {
-	float: right; 
+	position: absolute;
+	bottom: 0;
+	right: 0; 
 	padding: 5px 0;
-}
+} 
 
 /*** LOCALE BOX ***/
 #locale_box {  
-	margin-right: 20px;  
+	position: absolute;
+	top: 0;
+	right: 0; 
 	padding: 5px 0;
-	float: right;
 }
 #locale_box ul#locales {
 	list-style: none;  

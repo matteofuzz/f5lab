@@ -30,14 +30,16 @@ a:visited { color: #9f0;}
     
 #logo a {   
 	color: #333;  
-	background: transparent url(/images/vortex.png) no-repeat 6px 6px; 
+	background: transparent url(/images/vortex_bg.png) no-repeat 0 6px;   
+	padding: 6px 6px 0 80px;  
+	width: 100%;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
 }
 #logo a:hover {  
-	color: #fff;  
-	background: #9f0 url(/images/vortex.png) no-repeat 6px -50px;
+	color: #9f0;  
+	background: transparent url(/images/vortex_bg.png) no-repeat 0 -50px;
 }         
 
 /*** NAVIGATION MENU' ***/
@@ -82,11 +84,49 @@ nav#menu li.selected a {
 }
 
 /*** SEARCH BOX ***/
+#search_box #query {
+	border: solid 1px;   
+	padding: 4px 12px;  
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;  
+	background: #fff url(/images/icons/search.png) right -3px no-repeat;
+}     
+#search_box input[type=submit] {
+	display: none;
+}
 
-/*** LOCALE BOX ***/
-#locale_box ul#locales li.current {
-	border-bottom: 4px solid #9f0;    
-}   
+/*** LOCALE BOX ***/     
+#locale_box ul#locales li { 
+	margin: 2px 5px 0 0; 
+	padding: 3px 6px; 	
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;    
+}
 #locale_box ul#locales li a {
-	color: #333;   
-}   
+	color: #111;
+	text-decoration: none;
+}           
+#locale_box ul#locales li.current {
+	background: #111; 
+	color: #fff;       
+}            
+#locale_box ul#locales li:hover:not(.current) {
+	background: #111;  
+}
+#locale_box ul#locales li:hover:not(.current) a {  
+	color: #fff;     
+}  
+/*** THEME SWITCHER ***/
+#theme_switcher {
+	background: #111 url(/images/icons/star_moon_night.png) 1px 0 no-repeat;    
+	padding: 6px 6px 3px 28px; 
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+#theme_switcher li a {
+	color: #fff;
+	text-decoration: none;
+}

@@ -1,8 +1,7 @@
-<% content_for :stylesheets, stylesheet_link_tag("#{current_theme}.css") %>   
+<% content_for :stylesheets, stylesheet_link_tag("#{current_theme}.css") %>  
 <%= yield(:stylesheets) %>  
 <h1 id='logo'>
-  <%= link_to RefinerySetting.find_or_set(:site_name, "Company Name"), root_path %>
-  <span class='site_description'><%=raw RefinerySetting.get(:site_description) %></span>
+  <%= logo_link %>
 </h1>
 <%= render(:partial => "/shared/menu", :locals => {
              :dom_id => 'menu',
