@@ -119,4 +119,10 @@ footer div {
 }      
 footer div.right {
 	float: right;
+}       
+
+/*** BLOG POST ***/
+.blog_post header h1 a, #blog_post header h1 {
+	font-size: 18px;    
+	margin: 20px 0 10px 0;  
 }
