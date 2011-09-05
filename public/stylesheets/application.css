@@ -33,9 +33,16 @@ body {
 	font-family: "Waukegan", "arial", sans-serif;   
 	color: #333;
 	background: #fff;
-}            
+}         
+#body_content_right {
+	margin-left: 50px;
+  width: 350px;
+}
 header {
 	position: relative;
+}     
+#body_content.no_body_content_title {
+	margin-top: 20px;
 }
 .clear { clear: both; }
 a { color: #22A7F2;}   
@@ -123,6 +130,28 @@ footer div.right {
 
 /*** BLOG POST ***/
 .blog_post header h1 a, #blog_post header h1 {
-	font-size: 18px;    
-	margin: 20px 0 10px 0;  
+	font-size: 18px;     
+}    
+
+/*** PORTFOLIO ***/
+#portfolio_items {
+	list-style: none;   
+	padding: 0;
+}         
+#portfolio_items li {  
+	width: 300px;   
+	height: 250px;
+	text-align: center; 
+	margin-right: 28px; 
+	margin-bottom: 30px;;   
+	float: left;  
+}     
+aside  #portfolio_items li {  
+	width: 150px;   
+	height: 135px;  
+	margin-right: 18px;
 }
+#portfolio_items li a { 
+	text-decoration: none;  
+	font-size: 16px; 
+}  

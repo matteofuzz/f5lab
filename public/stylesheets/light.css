@@ -73,8 +73,8 @@ nav#menu li.selected {
 	background: #f60;    
 }
 nav#menu li:hover:not(.selected) {   
-	background: #ff3;
-}    
+	background: #111;
+}   
 nav#menu li a {  
 	color: #fff;  
 	text-decoration: none;
@@ -129,4 +129,15 @@ nav#menu li.selected a {
 #theme_switcher li a {
 	color: #fff;
 	text-decoration: none;
+}         
+
+/*** PORTFOLIO ***/     
+#portfolio_items li{    
+	border: 1px solid #fff; 
+}
+#portfolio_items li:hover{    
+	border: 1px solid #111; 
+}
+#portfolio_items li a{    
+	color: #111;
 }

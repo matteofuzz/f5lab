@@ -132,4 +132,15 @@ nav#menu li:hover:not(.selected) a {
 #theme_switcher li a {
 	color: #111;
 	text-decoration: none;
+}     
+     
+/*** PORTFOLIO ***/     
+#portfolio_items li{    
+	border: 1px solid #111; 
+}
+#portfolio_items li:hover{    
+	border: 1px solid #fff; 
+}
+#portfolio_items li a{    
+	color: #fff;
 }
