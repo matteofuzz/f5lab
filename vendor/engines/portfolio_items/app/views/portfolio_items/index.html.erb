@@ -1,8 +1,9 @@
 <% content_for :body_content_left do %>
   <ul id="portfolio_items">
     <% @portfolio_items.each do |portfolio_item| %>
-      <li>
-        <%= link_to image_tag(portfolio_item.screenshot.thumbnail('300x200#').url) + "<br />".html_safe + portfolio_item.title, portfolio_item_path(portfolio_item) %>
+      <li class="<%= cycle 'first_column', 'second_column', 'third_column' %>">     
+				<% title = "<p>#{portfolio_item.title.truncate(50, :separator => ' ')}</p>".html_safe %>
+        <%= link_to image_tag(portfolio_item.screenshot.thumbnail('300x200#').url) + title, portfolio_item_path(portfolio_item) %>
       </li>
     <% end %>
   </ul>

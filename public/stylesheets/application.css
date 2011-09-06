@@ -34,15 +34,25 @@ body {
 	color: #333;
 	background: #fff;
 }         
+header {
+	position: relative;
+}             
+#body_content {
+	font-family: verdana;   
+	font-size: 12px;
+}  
+#body_content h1 {
+	font-size: 20px;
+}
+#body_content h1, #body_content h2, #body_content h3 {
+	font-family: "Waukegan", "arial", sans-serif;    
+}
+#body_content.no_body_content_title {
+	margin-top: 20px;
+}     
 #body_content_right {
 	margin-left: 50px;
   width: 350px;
-}
-header {
-	position: relative;
-}     
-#body_content.no_body_content_title {
-	margin-top: 20px;
 }
 .clear { clear: both; }
 a { color: #22A7F2;}   
@@ -90,9 +100,12 @@ nav#menu li {
 #search_box {
 	position: absolute;
 	bottom: 0;
-	right: 0; 
+	right: 10px; 
 	padding: 5px 0;
-} 
+}   
+#search_box #query {
+	/*-webkit-appearance: none;*/
+}
 
 /*** LOCALE BOX ***/
 #locale_box {  
@@ -128,10 +141,27 @@ footer div.right {
 	float: right;
 }       
 
-/*** BLOG POST ***/
-.blog_post header h1 a, #blog_post header h1 {
-	font-size: 18px;     
+/*** BLOG ***/
+.blog_post header h1 a, #blog_post header h1 {     
+	text-decoration: none;
+	color: #f36;  
+} 
+.blog_post footer, #blog_post footer {  
+	border: none;
+	margin: 0;
+	padding: 0;
 }    
+aside#comments {
+	font-family: verdana;   
+	font-size: 12px;
+}
+form.new_blog_comment .field {
+	margin-bottom: 10px;
+}
+form.new_blog_comment .field label {
+	width: 75px;      
+	display: inline-block;
+} 
 
 /*** PORTFOLIO ***/
 #portfolio_items {
@@ -140,18 +170,26 @@ footer div.right {
 }         
 #portfolio_items li {  
 	width: 300px;   
-	height: 250px;
+	height: 236px;
 	text-align: center; 
-	margin-right: 28px; 
+	margin-right: 42px; 
 	margin-bottom: 30px;;   
-	float: left;  
-}     
+	float: left;    
+}      
+#portfolio_items li.third_column {   
+	margin-right: 0;
+}
+	 
 aside  #portfolio_items li {  
 	width: 150px;   
-	height: 135px;  
+	height: 125px;  
 	margin-right: 18px;
 }
 #portfolio_items li a { 
 	text-decoration: none;  
-	font-size: 16px; 
-}  
+	font-size: 12px; 
+} 
+#portfolio_items li a p {   
+	margin-top: 6px;
+	margin-bottom: 6px;
+} 
