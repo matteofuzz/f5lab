@@ -1,6 +1,10 @@
-<div class="left">
-  <%= t('.copyright', :year => Time.now.year,
-                      :site_name => RefinerySetting.find_or_set(:site_name, "Company Name")) %>
+<div class="left">    
+	<ul>
+  	<li><%= t('.copyright', :year => Time.now.year,
+                      :site_name => RefinerySetting.find_or_set(:site_name, "Company Name")) %></li>
+		<li>P.Iva 01187110323</li>
+		<li>Cod.fisc. FLNMTT72D29D530C</li>
+	</ul>
 </div>
 <div class="right">
 	<%= theme_switcher %>

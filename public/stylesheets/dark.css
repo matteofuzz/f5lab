@@ -86,17 +86,7 @@ nav#menu li:hover:not(.selected) a {
 } 
 
 /*** SEARCH BOX ***/
-#search_box #query {
-	border: none;   
-	padding: 4px 12px;  
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	border-radius: 10px;   
-	background: #fff url(/images/icons/search.png) right -3px no-repeat;
-}     
-#search_box input[type=submit] {
-	display: none;
-}
+
 
 /*** LOCALE BOX ***/     
 #locale_box ul#locales li { 
