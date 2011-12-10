@@ -9,4 +9,4 @@ website developed with RafineryCMS
 * portfolio_items
 == customizations:
 * slideshow with jQuery nivo slides from portfolio and/or images of home by settings
-* custom themes: light, dark (with switcher)
+* custom themes: ONLY DARK THEME [light, dark (with switcher) disabled for problem with home.css]
