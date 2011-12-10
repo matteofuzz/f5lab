@@ -1,9 +1,13 @@
 <div id="slideshow">
-  <% slides = [] %>                             
-  <% slides += @page.images if RefinerySetting.get(:show_home_images_in_slideshow) %>
-  <% slides += PortfolioItem.where("published_at <= ?", Time.now).map &:screenshot if RefinerySetting.get(:show_portfolio_items_in_slideshow) %>     
-  <% for slide in slides do %>
-     <%= image_tag(slide.thumbnail('1000x400#n').process(:greyscale).url) %>
+  <% if RefinerySetting.get(:show_home_images_in_slideshow) %>
+    <% for slide in @page.images do %>
+       <%= image_tag(slide.thumbnail('1000x400#n').process(:greyscale).url) %>
+    <% end %>
+  <% end %>
+  <% if RefinerySetting.get(:show_portfolio_items_in_slideshow) %> 
+    <% for item in PortfolioItem.where("published_at <= ?", Time.now) do %>
+       <%= link_to image_tag(item.screenshot.thumbnail('1000x400#n').process(:greyscale).url), portfolio_item_path(item) %>
+    <% end %>  
   <% end %>
 </div>                                        
 <% content_for :stylesheets, stylesheet_link_tag("nivo-slider.css") %>      

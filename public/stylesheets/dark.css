@@ -3,7 +3,8 @@
   Override default refinery application CSS below.
   Formatting applies to all frontend.  
                               
-	Theme's Colors:
+	Theme's Colors:   
+	- acid_lime_logo => #9DFA00
 	- acid_green => #9f0
 	- acid_lime => #cf0
 	- fucsia => #f36
@@ -21,35 +22,35 @@
 /* Fonts */
 
 /*** GENERAL ***/  
-body {                   
-	color: #fff;
-	background: #111;
+body {        
+	margin: 0;
+	padding: 0;          
+	color: #fff;                                                               
 }                     
-a { color: #9f0;}   
-a:hover { color: #9f0;}
-a:visited { color: #9f0;} 
+a { color: #cf0;}   
+a:hover { color: #cf0;}
+a:visited { color: #cf0;} 
    
 /*** LOGO ***/ 
      
 #logo a {       
-	color: #fff;  
-	background: transparent url(/images/vortex_gw.png) no-repeat 0 -50px;   
-	padding: 6px 0 0 74px;  
+	color: #fff;      
 }
-#logo a:hover {  
-	color: #9f0;  
-	background: transparent url(/images/vortex_gw.png) no-repeat 0 6px;
+#logo a:hover {   
+	
 }
 
 /*** NAVIGATION MENU' ***/
 nav#menu {       
-	background: #9f0;
+	background: #ccc;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
-	border-radius: 3px;   
+	border-radius: 3px;  
+	border-bottom: 1px solid #222; 
 }
 nav#menu li {   
-	border-right: 1px solid #111;
+	border-right: 1px solid #111;    
+	background: #aaa url(/images/menu_gradient.png) repeat-x bottom;                  
 }
 nav#menu li.first {  
 	-webkit-border-top-left-radius: 3px;
@@ -69,20 +70,25 @@ nav#menu li.last {
 	border-right: none;
 } 
 nav#menu li.selected {   
-	background: #f36;  
+	background: #cf0 url(/images/menu_gradient.png) repeat-x bottom;  
 }
-nav#menu li:hover:not(.selected) {   
-	background: #fff;    
+nav#menu li:hover:not(.selected) {                       
+	background: transparent url(/images/menu_gradient.png) repeat-x bottom;  
 }    
 nav#menu li a {  
-	color: #fff;  
+	color: #eee;  
 	text-decoration: none; 
+	text-shadow: 0px -1px 0px #888;
+	filter: dropshadow(color=#888, offx=0, offy=-1);
 }   
 nav#menu li.selected a {
-	font-weight: normal;
+	font-weight: normal; 
+	color: #fff;  
+	text-shadow: 0px -1px 0px #8a0;
+	filter: dropshadow(color=#8a0, offx=0, offy=-1);
 } 
 nav#menu li:hover:not(.selected) a {
-	color: #111;
+	color: #fff;
 } 
 
 /*** SEARCH BOX ***/
@@ -90,25 +96,17 @@ nav#menu li:hover:not(.selected) a {
 
 /*** LOCALE BOX ***/     
 #locale_box ul#locales li { 
-	margin: 2px 5px 0 0; 
-	padding: 3px 6px; 	
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	border-radius: 3px;    
+
 }
 #locale_box ul#locales li a {
 	color: #fff;
 	text-decoration: none;
 }           
-#locale_box ul#locales li.current {
-	background: #fff; 
-	color: #111;       
+#locale_box ul#locales li.current {  
 }            
-#locale_box ul#locales li:hover:not(.current) {
-	background: #fff;  
+#locale_box ul#locales li:hover:not(.current) { 
 }
-#locale_box ul#locales li:hover:not(.current) a {  
-	color: #111;     
+#locale_box ul#locales li:hover:not(.current) a {
 }                    
 
 /*** THEME SWITCHER ***/
@@ -126,11 +124,40 @@ nav#menu li:hover:not(.selected) a {
      
 /*** PORTFOLIO ***/     
 #portfolio_items li{    
-	border: 1px solid #111; 
+	border: 1px solid #333; 
+	-moz-box-shadow: 0px 0px 3px #111; /* Firefox */
+	-webkit-box-shadow: 0px 0px 3px #111; /* Safari, Chrome */
+	box-shadow: 0px 0px 3px #111; /* CSS3 */
 }
 #portfolio_items li:hover{    
-	border: 1px solid #fff; 
+	border: 1px solid #777; 
 }
 #portfolio_items li a{    
-	color: #fff;
+	color: #666;
+} 
+#portfolio_items li:hover a{    
+	color: #999;
+}
+section.portfolio_item {
+	margin-bottom: 20px;
+}
+#portfolio_item_image img {    
+	border: 1px solid #333; 
+	-moz-box-shadow: 0px 0px 3px #111; /* Firefox */
+	-webkit-box-shadow: 0px 0px 3px #111; /* Safari, Chrome */
+	box-shadow: 0px 0px 3px #111; /* CSS3 */
+} 
+#portfolio_item_image:hover img {    
+	border: 1px solid #777; 
+}    
+
+/*** SECTION PAGE ***/
+#page-content-container {
+	background: #fff;
+	color: #333;  
+	margin-top: 20px;
+	padding: 20px;	
+	-moz-box-shadow: 0px 0px 10px #000; /* Firefox */
+	-webkit-box-shadow: 0px 0px 10px #000; /* Safari, Chrome */
+	box-shadow: 0px 0px 10px #000; /* CSS3 */   
 }

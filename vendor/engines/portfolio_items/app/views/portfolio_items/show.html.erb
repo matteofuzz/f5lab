@@ -3,21 +3,21 @@
 <% end %>
 
 <% content_for :body_content_left do %>
-  <section>  
+  <section id="portfolio_item_image" class="portfolio_item">  
     <p>
       <%= link_to image_fu(@portfolio_item.screenshot, '600x800'), @portfolio_item.link %>
     </p>
   </section> 
-  <section>
+  <section id="portfolio_item_description" class="portfolio_item">
     <p>
       <%=raw @portfolio_item.description %>
     </p>
   </section>
-  <section>
+  <section id="portfolio_item_link" class="portfolio_item">
     Link: <%= link_to @portfolio_item.link, @portfolio_item.url %>
   </section>
-  <section>
-    <%= @portfolio_item.published_at.strftime "#{t(:published_at).capitalize} %d %B %Y" %>
+  <section id="portfolio_item_date" class="portfolio_item">
+    <%= t(:published_at).capitalize %> <%=l @portfolio_item.published_at.to_date, :format => :long %>
   </section>
 <% end %>
 

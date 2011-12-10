@@ -2,15 +2,12 @@
 <%= yield(:stylesheets) %>  
 <h1 id='logo'>
   <%= logo_link %>
-</h1>
+</h1>  
 <%= render(:partial => "/shared/menu", :locals => {
              :dom_id => 'menu',
              :css => 'menu'
-           }) %>  
+           }) %>    
 <div id="search_box">
   <%= render 'shared/search' %>
-</div>
-<div id="locale_box">
-  <%= render 'shared/locale_selector' %>
-</div>    
+</div>  
 <div class="clear"></div>                                                                      

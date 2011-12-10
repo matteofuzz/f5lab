@@ -2,7 +2,13 @@
   Override default refinery homepage styles here.
   These only apply to the homepage of your site.
 */   
-         
+ 
+/*** BODY ONLY FOR HOME PAGE ***/  
+body {   
+	min-height: 880px;  
+	background: #252525 url(/images/background_home_2011_dark.png) repeat-x left top;
+}      
+        
 /*** HEADER ***/
 h1#title {
 	display: none;
@@ -16,16 +22,30 @@ h1#title {
 #side_body_content {
     float: right;
     width: 500px;
-}
+} 
+#home_content { 
+	margin: 20px 0 0 0;
+}  
+#home_content h1 {
+  font-size: 20px;
+	margin-bottom: 16px;
+}   
 
 /*** SLIDESHOW ***/
 #slideshow {
 	position:relative;
 	width:1000px; 
 	height:400px;
-	background: url(/images/ajax_loader.gif) no-repeat 50% 50%;    
+	background: url(/images/ajax-loader-bar.gif) no-repeat 50% 50%;    
 	margin: auto; /* Se vogliamo lo slideshow centrato liquido */  
-	margin-top: 20px;
+	margin-top: 20px;      
+	-moz-box-shadow: 0px 0px 10px #000; /* Firefox */
+	-webkit-box-shadow: 0px 0px 10px #000; /* Safari, Chrome */
+	box-shadow: 0px 0px 10px #000; /* CSS3 */  
+	/* For IE 8 */
+ 	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=10, Direction=135, Color='#000000')";
+	/* For IE 5.5 - 7 */
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=10, Direction=135, Color='#000000');
 }
 #slideshow img {
 	position:absolute;

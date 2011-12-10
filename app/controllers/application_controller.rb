@@ -8,4 +8,10 @@ class ApplicationController < ActionController::Base
     session[:theme] = theme
     redirect_to :back
   end
+  
+  # see https://github.com/resolve/refinerycms/issues/794
+  def home_page?
+    root_path == request.path or root_path == "#{request.path}/"
+  end
+  
 end

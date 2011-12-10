@@ -4,10 +4,12 @@
 </section>  
 <section id='home_images'>     
   <%#= render "shared/page_images" %>  
-</section>
-<section id='body_content'>
-  <%=raw @page[:body] %>
-</section>
-<section id='side_body_content'>
-  <%=raw @page[:side_body] %>
+</section>    
+<section id="home_content">
+  <section id='body_content'>
+    <%=raw @page[:body] %>
+  </section>
+  <section id='side_body_content'>
+    <%=raw @page[:side_body] %>
+  </section>  
 </section>

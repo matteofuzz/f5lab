@@ -31,18 +31,38 @@
 /*** GENERAL ***/  
 body {
 	font-family: "Waukegan", "arial", sans-serif;   
-	color: #333;
-	background: #fff;
-}         
+	color: #333;        
+	background: #252525 url(/images/background_pages_2011_dark.png) repeat-x left top;  
+	border-bottom: solid 1px #181818; 
+}      
+#site_bar { display: none; } /* nascondo il barrone blu di refinery */    
+section#page {
+	/*min-height: 450px;*/
+}  
 header {
-	position: relative;
+	position: relative; 
+	height: 120px; 
+	padding: 0;
 }             
 #body_content {
 	font-family: verdana;   
 	font-size: 12px;
 }  
 #body_content h1 {
-	font-size: 20px;
+  font-size: 30px;
+  margin: 20px 0;
+}   
+#body_content .inner.booo {
+	background: #f0f0f0;
+	padding: 10px;
+	color: #333;    
+	-moz-box-shadow: 0px 0px 10px #000; /* Firefox */
+	-webkit-box-shadow: 0px 0px 10px #000; /* Safari, Chrome */
+	box-shadow: 0px 0px 10px #000; /* CSS3 */  
+	/* For IE 8 */
+ 	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=10, Direction=135, Color='#000000')";
+	/* For IE 5.5 - 7 */
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=10, Direction=135, Color='#000000');
 }
 #body_content h1, #body_content h2, #body_content h3 {
 	font-family: "Waukegan", "arial", sans-serif;    
@@ -71,37 +91,52 @@ a:visited { color: #22A7F2;}
 /*** LOGO ***/ 
 #logo {
 	font-size: 60px;   
-	font-family: "Waukegan Extended";
+	font-family: "Waukegan Extended";    
+	letter-spacing: 3px;
 	font-weight: normal;  
-	margin: 20px 0 16px 0;  
+	margin: 0 0 0 -20px; 
+	height: 120px;
+	display: block; 
 }     
 #logo a {
 	text-decoration: none;
-	color: #333;  
-	background: transparent url(/images/vortex.png) no-repeat 6px 6px;   
-	padding: 6px 0 0 80px; 
-}    
+	color: #333;                              
+	background: transparent url(/images/logo_lime_glow.png) no-repeat left top;   
+	padding: 20px 0 0 120px;   
+	height: 100px;
+	display: block; 
+	position: relative;
+}   
+#logo a:hover {  
+	text-shadow: #fff 0px 0px 3px;
+} 
 #logo .site_description {
-	font-size: 18px;  
-	margin-left: 10px;
+	font-size: 18px; 	 
+	font-family: "Waukegan"; 
+	letter-spacing: 1px;
+	position: absolute;
+	bottom: 20px;
+	left: 120px;
 }         
 
 /*** NAVIGATION MENU' ***/
 nav#menu {
-	float: left;   
+	position: absolute;
+	top: 20px;
+	right: 0;  
 }
 nav#menu li {  
 	font-size: 18px; 
-	padding: 5px 10px;
+	padding: 6px 10px 4px 10px;
 	margin: 0;                
 }     
 
 /*** SEARCH BOX ***/
-#search_box {
+#search_box {  
 	position: absolute;
-	bottom: 0;
-	right: 10px; 
-	padding: 5px 0;
+	bottom: 20px;
+	right: 0; 
+	padding: 0;
 }   
 #search_box #query {    
 	border: none;     
@@ -118,10 +153,7 @@ nav#menu li {
 
 /*** LOCALE BOX ***/
 #locale_box {  
-	position: absolute;
-	top: 0;
-	right: 0; 
-	padding: 5px 0;
+  padding: 0;   
 }
 #locale_box ul#locales {
 	list-style: none;  
@@ -130,35 +162,93 @@ nav#menu li {
 }       
 #locale_box ul#locales li {
 	float: left;    
-	margin: 2px 5px 0 5px; 
+	margin: 0 5px; 
 }  
 #locale_box ul#locales li img {
-	margin-right: 4px;
+	margin-right: 2px;
 }    
       
 /*** FOOTER ***/   
 footer {
-	margin-bottom: 20px;
-	margin-top: 20px;
-	padding-top: 20px;
-	border-top: solid 1px;
+	margin: 40px 0 0 0 !important; 
+	padding: 0 !important; 
+	width: 100% !important;  
+	border-top: solid 1px #303030;  
+	font-family: "arial", sans-serif;
+	font-size: 14px;
+	color: #555;           
+	background: #222;          
+}  
+footer .data a {
+	color: #555 !important;
 }
-footer div {
+footer .data {
+	text-shadow: 0px -1px 0px #000;
+	filter: dropshadow(color=#000, offx=0, offy=-1);
+	font-size: 13px;
+}
+footer #footer_content {
+	width: 1000px;  
+	min-height: 120px;
+	margin: 0 auto;  
+	padding: 0;  
+	position: relative;  
+}
+footer #footer_content div {
 	display: inline-block;
+	padding: 10px;  
+	float: left;
 }      
-footer div.right {
-	float: right;
-}    
+footer #footer_content .social { 
+	position: absolute;
+	bottom: 0;  
+	left: 0;
+} 
+footer #footer_content .social a {
+	text-decoration: none;
+	font-size: 12px;
+	margin: 10px;
+	line-height: 20px;
+} 
+footer #footer_rss_feed_subscribe {
+	background: url("/images/refinerycms-blog/rss-feed.png") no-repeat scroll 0 0 transparent;
+	padding-left: 18px;
+	color: #F60;
+	position: relative;
+	bottom: 3px;
+}
+footer #footer_content #locale_box { 
+	position: absolute;
+	bottom: 0; 
+	right: 0; 
+}
 footer ul {
 	list-style: none;   
 	margin: 0;
 	padding: 0;
 }   
+footer #copyright {
+	position: absolute;
+	bottom: 0;
+}
 
 /*** BLOG ***/
+.blog_post h1, #blog_post h1 {
+	margin-bottom: 10px !important;
+}
+.blog_post header {
+	height: 100px;
+}
+#blog_post header {
+	height: 60px;
+}
+.blog_post footer, #blog_post footer {
+	background: transparent;
+}
 .blog_post header h1 a, #blog_post header h1 {     
 	text-decoration: none;
-	color: #f36;  
+	color: #f36;
+	font-size: 20px;  
 } 
 .blog_post footer, #blog_post footer {  
 	border: none;
@@ -167,7 +257,13 @@ footer ul {
 }    
 aside#comments {
 	font-family: verdana;   
-	font-size: 12px;
+	font-size: 10px;
+	margin-bottom: 20px;
+	padding: 0 10px;
+	border: 1px solid #333;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
 }
 form.new_blog_comment .field {
 	margin-bottom: 10px;
