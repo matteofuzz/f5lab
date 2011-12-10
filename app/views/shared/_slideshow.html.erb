@@ -1,7 +1,7 @@
 <div id="slideshow">
   <% if RefinerySetting.get(:show_home_images_in_slideshow) %>
     <% for slide in @page.images do %>
-       <%= image_tag(slide.thumbnail('1000x400#n').process(:greyscale).url) %>
+       <%= image_tag(slide.thumbnail('1000x400#n').url) %>
     <% end %>
   <% end %>
   <% if RefinerySetting.get(:show_portfolio_items_in_slideshow) %> 
