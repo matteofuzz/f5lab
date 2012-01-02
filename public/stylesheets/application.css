@@ -44,7 +44,7 @@ header {
 	height: 120px; 
 	padding: 0;
 }             
-#body_content {
+#body_content, #side_body_content {
 	font-family: verdana;   
 	font-size: 12px;
 }  
