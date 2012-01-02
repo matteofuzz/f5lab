@@ -5,7 +5,7 @@
     <% end %>
   <% end %>
   <% if RefinerySetting.get(:show_portfolio_items_in_slideshow) %> 
-    <% for item in PortfolioItem.where("published_at <= ?", Time.now) do %>
+    <% for item in PortfolioItem.where("published_at <= ?", Time.now).order("position ASC") do %>
        <%= link_to image_tag(item.screenshot.thumbnail('1000x400#n').process(:greyscale).url), portfolio_item_path(item) %>
     <% end %>  
   <% end %>
@@ -20,7 +20,7 @@
 			        effect:'random', //Specify sets like: 'fold,fade,sliceDown'  (sliceDown sliceDownLeft sliceUp sliceUpLeft sliceUpDown sliceUpDownLeft fold fade random slideInRight slideInLeft)
 			        slices:15,
 			        animSpeed:500, //Slide transition speed
-			        pauseTime:3000,
+			        pauseTime:6000,
 			        startSlide:0, //Set starting Slide (0 index)
 			        directionNav:true, //Next & Prev
 			        directionNavHide:true, //Only show on hover

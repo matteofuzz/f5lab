@@ -64,7 +64,7 @@ header {
 	/* For IE 5.5 - 7 */
 	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=10, Direction=135, Color='#000000');
 }
-#body_content h1, #body_content h2, #body_content h3 {
+#body_content h1, #body_content h2, #body_content h3, #side_body_content h1, #side_body_content h2, #side_body_content h3 {
 	font-family: "Waukegan", "arial", sans-serif;    
 }
 #body_content.no_body_content_title {
@@ -237,10 +237,10 @@ footer #copyright {
 	margin-bottom: 10px !important;
 }
 .blog_post header {
-	height: 100px;
+	height: auto;
 }
 #blog_post header {
-	height: 60px;
+	height: auto;
 }
 .blog_post footer, #blog_post footer {
 	background: transparent;
