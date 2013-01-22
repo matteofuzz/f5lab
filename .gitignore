@@ -10,6 +10,11 @@ db/*.sqlite3-journal
 tmp
 tmp/**/*
 
+# Configuration
+config/database*
+config/deploy*
+config/.*
+
 # Documentation
 doc/api
 doc/app
