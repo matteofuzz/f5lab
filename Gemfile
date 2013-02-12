@@ -1,6 +1,8 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.20'
+#gem 'rails', '3.0.20'
+# see comments on http://weblog.rubyonrails.org/2013/2/11/SEC-ANN-Rails-3-2-12-3-1-11-and-2-3-17-have-been-released/
+gem "rails", :git => "git://git.assembla.com/assembla-rails.git", :branch => :master
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
